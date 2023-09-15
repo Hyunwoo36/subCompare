@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.subTitle {
+    font-size: large;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    width: 70%;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem 2rem;
+}
+
+.marginLeft {
+    margin-left: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.fontLarger {
+    font-size: larger;
+}
