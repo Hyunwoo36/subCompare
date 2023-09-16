@@ -1,14 +1,11 @@
-import styles from './home.module.css';
 import HeadMain from './components/headMain.js';
-import CategoryTitles from './components/categoryTitles';
-import ServiceCategory from './components/serviceCategory';
+import MainContent from './components/mainContent';
 
 export default function Home() {
   return (
     <div>
       <HeadMain />
-      <CategoryTitles />
-      <ServiceCategory />
+      <MainContent />
     </div>
   )
 }
