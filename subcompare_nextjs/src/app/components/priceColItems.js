@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import CategoryContext from "./categoryContext.js";
 import prices from "../data/prices.js";
+import styles from '../home.module.css';
 
 export default function PriceColumnItems() {
     const { currentCategory } = useContext(CategoryContext);
@@ -25,7 +26,7 @@ export default function PriceColumnItems() {
         servicePrices = ["Price Unavailable!"];
     }
     return (
-        <div>
+        <div className={`${styles.serviceItemPadding} ${styles.fontLarger}`}>
             {servicePrices.map((price, index) => <div key={index}>$ {price}</div>)}
         </div>
     )

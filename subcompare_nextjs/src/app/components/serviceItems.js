@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import CategoryContext from './categoryContext.js';
+import styles from '../home.module.css';
 
 export default function ServiceItems() {
     const { currentCategory } = useContext(CategoryContext);
@@ -25,7 +26,7 @@ export default function ServiceItems() {
         services = ["Nothing more!"];
     }
     return (
-        <div>
+        <div className={`${styles.serviceItemPadding} ${styles.fontLarger}`}>
             {services.map(service => <div key={service}>{service}</div>)}
         </div>
     )

@@ -29,7 +29,7 @@ export default function DetailItems() {
     }
 
     return (
-        <div className={styles.flexCol}>
+        <div className={`${styles.flexCol} ${styles.informationPadding}`}>
             {services.map((service, index) => <InformationIcon key={index} />)}
         </div>
     )

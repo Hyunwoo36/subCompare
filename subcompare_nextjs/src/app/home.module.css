@@ -73,4 +73,19 @@
 .flexCol {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.serviceCategoryPadding > div {
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+.serviceItemPadding > div {
+    padding-bottom: 1.5rem;
+}
+
+.informationPadding > * {
+    padding-bottom: 1rem;
 }
