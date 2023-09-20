@@ -1,11 +1,36 @@
 import InformationIcon from "../iconSVG/informationIcon.js"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import CategoryContext from "./categoryContext.js";
 import styles from '../home.module.css';
+
+function InfoModal({ onClose, service }) {
+    let details;
+
+    switch (service) {
+        case "Netflix":
+            details = "Netflix details goes here";
+            break;
+        case "Hulu":
+            details = "Hulu details goes here";
+            break;
+        default:
+            details = "Details not available";
+    }
+
+    return (
+        <div className={styles.modalContainer}>
+            <h1>{service} Details</h1>
+            <p>{details}</p>
+            <span className={styles.closeModal} onClick={onClose}>X</span>
+        </div>
+    )
+}
 
 export default function DetailItems() {
 
     const { currentCategory } = useContext(CategoryContext);
+    const [showModal, setShowModal] = useState(false);
+    const [selectedService, setSelectedService] = useState(null);
 
     let services;
     if (currentCategory === "OTT / Streaming") {
@@ -30,7 +55,12 @@ export default function DetailItems() {
 
     return (
         <div className={`${styles.flexCol} ${styles.informationPadding}`}>
-            {services.map((service, index) => <InformationIcon key={index} />)}
+            {showModal && <InfoModal onClose={() => setShowModal(false)} service={selectedService} />}
+            {services.map((service, index) => (
+                <div key={index} onClick={() => { setShowModal(true); setSelectedService(service); }} >
+                    <InformationIcon className={styles.cursor} />
+                </div>
+            ))}
         </div>
     )
 }

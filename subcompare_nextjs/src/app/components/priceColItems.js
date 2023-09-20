@@ -1,10 +1,27 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import CategoryContext from "./categoryContext.js";
-import prices from "../data/prices.js";
+import prices from "../data/data.js";
 import styles from '../home.module.css';
 
 export default function PriceColumnItems() {
     const { currentCategory } = useContext(CategoryContext);
+    const [prices, setPrices] = useState({
+        "Netflix": "Fetching..."
+    });
+
+    useEffect(() => {
+        async function fetchData() {
+            const response = await fetch('/api/scrapePrices');
+            const data = await response.json();
+
+            setPrices(prevPrices => ({
+                ...prevPrices,
+                "Netflix": data.lowestPrice
+            }));
+        }
+        fetchData();
+    }, []);
+
     let servicePrices;
     if (currentCategory === "OTT / Streaming") {
         servicePrices = ["Netflix", "Hulu", "Disney+", "Paramount+", "HBO Max", "Peacock", "Discovery+", "Apple TV+", "Vudu", "Roku Channel", "Sling TV"].map(service => prices[service]);
