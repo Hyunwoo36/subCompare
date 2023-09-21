@@ -1,49 +1,180 @@
-const prices = {
-    // "OTT / Streaming": {
-
-    // },
-    // ""
-    "Netflix": 8.99,
-    "Hulu": 5.99,
-    "Disney+": 7.99,
-    "Paramount+": 4.99,
-    "HBO Max": 14.99,
-    "Peacock": 4.99,
-    "Discovery+": 4.99,
-    "Apple TV+": 4.99,
-    "Vudu": 4.99,
-    "Roku Channel": 0,
-    "Sling TV": 35,
-    // not sure about the below
-    "Apple Music": 10,
-    "Spotify": 9,
-    "Tidal": 8,
-    "Youtube Music": 8,
-    "Deezer": 8,
-    "SoundCloud Go+": 9,
-    "24 Hour Fitness": 7,
-    "LA Fitness": 5,
-    "Gold's Gym": 6,
-    "Planet Fitness": 8,
-    "Anytime Fitness": 6,
-    "Audible": 7,
-    "Kindle Unlimited": 3,
-    "Scribd": 7,
-    "Udemy": 7,
-    "Coursera": 9,
-    "LinedIn Learning": 9,
-    "MasterClass": 3,
-    "New York Times": 9,
-    "The Economist": 5,
-    "National Geographic": 9,
-    "The Wall Street Journal": 2,
-    "Blue Apron": 9,
-    "HelloFresh": 7,
-    "DoorDash Pass": 5,
-    "Uber Eat Pass": 8,
-    "Tinder Gold/Plus": 7,
-    "Bumble Boost": 9,
-    "OkCupid A-List": 5
+const dataAll = {
+    "OTT / Streaming": {
+        "Netflix": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Hulu": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Disney+": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Paramount+": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "HBO Max": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Peacock": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Discovery+": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Apple TV+": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Vudu": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Roku Channel": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Sling TV": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        }
+    },
+    "Music": {
+        "Apple Music": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Spotify": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Tidal": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Youtube Music": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Deezer": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "SoundCloud Go+": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        }
+    },
+    "Fitness": {
+        "24 Hour Fitness": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "LA Fitness": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Gold's Gym": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Planet Fitness": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Anytime Fitness": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        }
+    },
+    "E-Book and Audiobook": {
+        "Audible": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Kindle Unlimited": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Scribd": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        }
+    },
+    "Learning / Course Platforms": {
+        "Udemy": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Coursera": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "LinedIn Learning": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "MasterClass": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        }
+    },
+    "Magazine / News Subscription": {
+        "New York Times": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "The Economist": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "National Geographic": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "The Wall Street Journal": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+    },
+    "Meal Kit / Food Delivery": {
+        "Blue Apron": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "HelloFresh": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "DoorDash Pass": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Uber Eat Pass": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        }
+    },
+    "Dating App": {
+        "Tinder Gold/Plus": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "Bumble Boost": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        },
+        "OkCupid A-List": {
+            price: 8.99,
+            details: "Netflix details goes here"
+        }
+    },
 }
 
-export default prices;
+export default dataAll;
