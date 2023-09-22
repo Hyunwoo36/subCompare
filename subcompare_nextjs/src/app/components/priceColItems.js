@@ -5,9 +5,7 @@ import styles from '../home.module.css';
 
 export default function PriceColumnItems() {
     const { currentCategory } = useContext(CategoryContext);
-    const [prices, setPrices] = useState({
-        "Netflix": "Fetching..."
-    });
+    const [prices, setPrices] = useState({});
 
     useEffect(() => {
         async function fetchData() {
@@ -23,15 +21,19 @@ export default function PriceColumnItems() {
     }, []);
 
     let serviceData = dataAll[currentCategory];
-    let servicePrices;
+    let serviceNames;
     if (serviceData) {
-        servicePrices = Object.values(serviceData).map(service => service.price);
+        serviceNames = Object.keys(serviceData);
     } else {
-        servicePrices = ["Price Unavailable"];
+        serviceNames = ["Service Unavailable"];
     }
     return (
         <div className={`${styles.serviceItemPadding} ${styles.fontLarger}`}>
-            {servicePrices.map((price, index) => <div key={index}>$ {price}</div>)}
+            {serviceNames.map((name, index) => (
+                <div key={index}>
+                    $ {prices[name] ? prices[name] : (serviceData ? serviceData[name].price : "Price Unavailable")}
+                </div>
+            ))}
         </div>
     )
 }
