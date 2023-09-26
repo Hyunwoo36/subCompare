@@ -7,18 +7,18 @@ export default function PriceColumnItems() {
     const { currentCategory } = useContext(CategoryContext);
     const [prices, setPrices] = useState({});
 
-    useEffect(() => {
-        async function fetchData() {
-            const response = await fetch('/api/scrapePrices');
-            const data = await response.json();
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         const response = await fetch('/api/scrapePrices');
+    //         const data = await response.json();
 
-            setPrices(prevPrices => ({
-                ...prevPrices,
-                "Netflix": data.lowestPrice
-            }));
-        }
-        fetchData();
-    }, []);
+    //         setPrices(prevPrices => ({
+    //             ...prevPrices,
+    //             "Netflix": data.lowestPrice
+    //         }));
+    //     }
+    //     fetchData();
+    // }, []);
 
     let serviceData = dataAll[currentCategory];
     let serviceNames;

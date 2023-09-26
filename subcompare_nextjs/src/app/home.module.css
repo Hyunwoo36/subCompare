@@ -95,25 +95,64 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 30%;
-    height: 50%;
-    background: #FBE3E3;
+    width: 40%;
+    background: #F6EAC0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.modalContainer h1 {
+    margin-bottom: 20px;
+    color: #3F3D56;
+    font-weight: 600;
+}
+
+.modalContainer p {
+    color: #3F3D56;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .closeModal {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
+    background: rgba(246, 234, 192, 0.7);
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 18px;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #3F3D56;
 }
+
+.closeModal:hover {
+    background: #FBE3E3;
+    color: #FF6347;
+}
+
+.serviceLink {
+    color: #0073e6;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.serviceLink:hover {
+    background-color: #f0f0f0;
+}
+
 .cursor {
     cursor: pointer;
 }

@@ -7,11 +7,15 @@ import dataAll from "../data/data.js";
 function InfoModal({ onClose, service, currentCategory }) {
     const details = (dataAll[currentCategory] && dataAll[currentCategory][service]
         && dataAll[currentCategory][service].details) ? dataAll[currentCategory][service].details : "Details not available";
+    const link = (dataAll[currentCategory] && dataAll[currentCategory][service]
+        && dataAll[currentCategory][service].link) ? dataAll[currentCategory][service].link : null;
+
 
     return (
         <div className={styles.modalContainer}>
             <h1>{service} Details</h1>
             <p>{details}</p>
+            {link && <a href={link} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>Link to official site</a>}
             <span className={styles.closeModal} onClick={onClose}>X</span>
         </div>
     )

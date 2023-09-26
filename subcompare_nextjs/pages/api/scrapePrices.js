@@ -9,7 +9,7 @@ export default async (req, res) => {
         const browser = await puppeteer.launch({ headless: false });
         const page = await browser.newPage();
 
-        // navigate to netflix price showing page 
+        // navigate to netflix price showing page
         await page.goto('https://www.cabletv.com/netflix');
 
         // extract prices
