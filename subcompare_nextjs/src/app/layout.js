@@ -2,8 +2,8 @@ import './globals.css';
 import Head from 'next/head';
 
 export const metadata = {
-  title: 'SubCompare',
-  description: 'Get live subscription prices across Music, Fitness, OTT, Cloud, Learning, Food Delivery & more. Compare and find the best deals!',
+  title: 'SubCompare - Comprehensive Subscription Service Comparison',
+  description: 'Compare prices and features of top subscription services across Music, OTT, Fitness, Cloud Storage, E-Learning, Food Delivery, and more. Discover the best value for your needs with SubCompare!',
 }
 
 export default function RootLayout({ children }) {
