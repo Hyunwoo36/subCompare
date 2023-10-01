@@ -107,6 +107,9 @@
     border-radius: 15px;
     padding: 20px;
     transition: all 0.3s ease;
+    padding-top: 1rem;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 .modalContainer h1 {
     margin-bottom: 20px;
@@ -118,12 +121,16 @@
     color: #3F3D56;
     line-height: 1.6;
     margin-bottom: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+    /* position: relative; */
 }
 
 .closeModal {
-    position: absolute;
-    top: 20px;
+    position: sticky;
+    top: 10px;
     right: 20px;
+    margin-bottom: auto;
     cursor: pointer;
     background: rgba(246, 234, 192, 0.7);
     border-radius: 50%;
@@ -131,6 +138,8 @@
     font-size: 18px;
     transition: background 0.3s ease, color 0.3s ease;
     color: #3F3D56;
+    z-index: 10;
+    align-self: flex-end;
 }
 
 .closeModal:hover {

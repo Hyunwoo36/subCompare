@@ -18,10 +18,10 @@ const dataAll = {
 
             Hulu offers four pricing plans, including:
             
-            Hulu: 7.99/month
-            Hulu (No-Ads): $14.99/month
-            Hulu + Live TV: $69.99/month
-            Hulu (No-Ads) + Live TV: $75.99/month
+            • Hulu: 7.99/month
+            • Hulu (No-Ads): $14.99/month
+            • Hulu + Live TV: $69.99/month
+            • Hulu (No-Ads) + Live TV: $75.99/month
             In addition to these plans, Hulu offers add-ons and bundled packages that give viewers access to other collections of content, as well.`,
             link: "https://help.hulu.com/s/article/how-much-does-hulu-cost"
         },
@@ -36,7 +36,17 @@ const dataAll = {
         },
         "Paramount+": {
             price: 5.99,
-            details: "Netflix details goes here",
+            details: `Paramount+ is the OTT streaming channel that gives exclusive access to CBS content at a very affordable price. It holds a rich On-Demand library of exclusive news as well as classic shows like CSI, All Rise, Twin Peaks, and much more.
+
+            By making the subscription to CBS All Access, you get access to tons of shows from the extensive CBS On-Demand catalog and live content from the CBS channel. There are specific CBS shows with attractive costs and competitive pricing as it supports multiple devices.
+            
+            The prominent advantage of Paramount+ is that it is very affordable and costs a bit extra for access to Ad-free content. 
+            
+            The Ad-free package offers Live TV services inclusive of world sports broadcasts. You get offline downloads, HD quality, exciting offers with the availability of the OTT TV app on multiple devices. It is the perfect balance of On-Demand and Live content.
+            
+                    • Availability of a variety of devices
+                    • Very much affordable
+                    • Balanced display of Live sports and On-Demand content`,
             link: "https://www.paramountplus.com/account/signup/pickplan/"
         },
         "Max": {
@@ -47,8 +57,8 @@ const dataAll = {
             
             HBO Max comes in two pricing tiers:
             
-            Streaming with ads costs $9.99/month
-            Ad-free streaming is $14.99/month`,
+            • Streaming with ads costs $9.99/month
+            • Ad-free streaming is $14.99/month`,
             link: "https://help.max.com/US/Answer/Detail/000002547"
         },
         "Peacock": {
@@ -60,12 +70,45 @@ const dataAll = {
         },
         "Discovery+": {
             price: 4.99,
-            details: "Discovery+ details goes here",
+            details: `discovery+ is the OTT streaming platform that was launched by Warner Bros. Discovery in 2021 in the USA.  
+
+            If you are an animal life enthusiast and have a keen interest in the documentaries world, then look no other than discovery+. It has a vast variety of content that includes TV shows, and documentaries related to true crime, adventure, wildlife, and many more. Some of the famous discovery+ shows are Chopped, Home Edition, Planet Earth, and more.
+            
+            One thing that makes the platform stand out is that it is focused on Non-fiction content, which can help kids and adults to have fun- learning altogether.
+            
+            discovery+ offers 55,000+ episodes and more than 50 original shows and also allows access to more than 2,500 shows.
+            
+            Nonetheless, the only drawback it has is that it is not available worldwide, after all, such kinds of platforms are needed that provide interesting content and improve the knowledge of all age groups. But, they have promised to expand their OTT video streaming services to other countries too.
+            
+            Features of discovery+
+            
+            • Applicable almost in most devices.
+            • You can watch past seasons of shows with a subscription.
+            • Ad-free option is available.
+            • Plans are affordable.
+            • Focused on reality content.
+
+            Pricing-
+            • With Ads- $4.99/month
+            • Ad-free version- $6.99/month.`,
             link: "https://help.discoveryplus.com/hc/en-us/articles/360058773493-Cost-of-discovery-subscription-plans"
         },
         "Apple TV+": {
             price: 6.99,
-            details: "Netflix details goes here",
+            details: `Despite the price jump to $7 a month, Apple TV Plus stands as the lowest-priced premium, ad-free streaming service available, with high-end features like 4K resolution, HDR and mobile downloads. However, it's also the only service on this list that includes only original content, and no back catalog of shows or movies to explore. While it now has more than 50 exclusive, big-budget original programming shows and movies, only a few have captured widespread attention, such as Ted Lasso and Severance, while CODA won 2022's Oscar for Best Picture. Though the service is branching out with additions like live MLB baseball on Fridays, its library is far smaller than any of the others on this list. 
+
+            The app is also confusing because it's housed in the larger Apple TV app with other content. However, Apple TV Plus has one big advantage: There are a lot of ways to get it for free, at least for a while. If you're a degree-seeking college student, a new purchaser of an Apple device, or someone who subscribes to the Apple One bundle, you can snag a long-term free trial of Apple TV Plus.
+            
+            Pros:
+            • Ted Lasso, and prestige shows such as Pachinko, Foundation, The Morning Show, Severance
+            • No ads
+            • All originals stream with 4K, HDR, Dolby Vision and Dolby Atmos
+            • Cheap monthly rate
+
+            Cons:
+            • Small selection of titles
+            • Lack of older content
+            • No Android support`,
             link: "https://www.apple.com/apple-tv-plus/?itscg=10000&itsct=atv-0-apl_hp-pmo_lrn-apl-avl-210916"
         },
         "ESPN+": {
@@ -74,8 +117,8 @@ const dataAll = {
 
             ESPN+ offers the following plans:
             
-            $10/month
-            $100/year`,
+            • $10/month
+            • $100/year`,
             link: "https://plus.espn.com"
         },
         "Amazon Prime Video": {
@@ -86,53 +129,185 @@ const dataAll = {
             
             Prime Video is included in the Amazon Prime membership.`,
             link: "https://www.amazon.com/gp/help/customer/display.html?nodeId=G34EUPKVMYFW8N2U"
+        },
+        "Youtube TV": {
+            price: 54.99,
+            details: `You’re likely familiar with YouTube as a free online streaming platform, but did you know that YouTube has a premium offering, too?
+
+            YouTube TV offers both subscriptions for unlimited streaming and pay-per-view for accessing individual pieces of content. YouTube TV offers live streaming access from over 85 television channels and is popular with video gamers, similar to the Twitch streaming platform.
+            
+            This OTT service costs $64.99/month or $500/year.`,
+            link: "https://tv.youtube.com/welcome/"
         }
     },
     "Music": {
         // https://www.pcmag.com/picks/the-best-online-music-streaming-services
         "Apple Music": {
             price: 10.99,
-            details: "Netflix details goes here",
+            details: `Featuring lossless audio, Dolby Atmos support, a 100-million song catalog, radio stations, Siri compatibility, Hi-Res Audio, lyrics, and playlists, Apple Music offers excellent bang for your buck. Plus, its 24/7 music video channel aims to be a contemporary spin on MTV.
+            Music buffs who favor Apple's ecosystem are this service's target audience. Apple Music is compatible with Apple TV, CarPlay, iPad, iPhone, and Mac, so if you own an Apple device, you can easily zone out to your favorite tracks.
+            
+            Pros:
+            • Features more than 100 million tracks
+            • Cool video playlists
+            • 24/7 Apple Music radio stations
+            • 24/7 Apple Music TV video channel
+            • Family plan
+            • Rich Hi-Res Audio and Dolby Atmos sound
+            • Lyrics and karaoke
+
+            Cons:
+            • No free version
+            • Limited non-music content
+            • Lossless audio not available on all platforms
+`,
             link: "https://www.apple.com/apple-music/#plans"
         },
         "Spotify": {
             price: 9.99,
-            details: "Netflix details goes here",
+            details: `Despite fierce competition from other feature-rich streaming services, Spotify remains the king of the steaming music hill. This comes courtesy of a robust musical catalog, podcasts, collaborative playlists, and a stacked Student plan that includes Hulu and Showtime.
+            Spotify hits all the right notes for a streaming music service, but its deep podcast selection elevates the service to a true top-shelf product. An Oral History of: The Office, The Bill Simmons Podcast, and How to Save a Planet are just three of the company's cool, exclusive shows. If you're a podcast devourer, this is the streaming service for you.
+            Pros:
+            • Cool, AI-powered DJ
+            • Collaborative playlists and Group Session options
+            • Optional desktop app that lets you play locally stored audio files
+            • Premium accounts let you hear select albums before they're released
+            • Student plan includes Hulu with ads
+            • Scrolling lyrics for all versions of the app
+            • Podcasts
+            • Free version
+
+            Cons:
+            • Still lacks hi-res audio
+            `,
             link: "https://www.spotify.com/us/premium/"
         },
         "Tidal": {
             price: 10.99,
-            details: "Netflix details goes here",
+            details: `Tidal is a music streaming service that offers excellent, Hi-Res Audio, and a stellar music catalog. In a nice touch, Tidal includes thoughtful music essays, music videos, and the ability to purchase concert tickets.
+            Tidal is a great music platform for listeners who are passionate about music. If you want to read fun music writing, it has many entertaining feature stories. If you want to watch video, Tidal has music videos, video outtakes, and backstage footage.
+            Pros:
+            • Excellent sound quality
+            • Optional hi-res audio tier
+            • Long-form editorial pieces
+            • Music-focused podcasts
+            • Exclusive backstage content, live streams, and concerts
+            • Lyrics
+
+            Cons:
+            • Free tier lacks Tidal's defining perks
+            • Relatively expensive
+            `,
             link: "https://tidal.com/pricing"
         },
         "Youtube Music": {
             price: 10.99,
-            details: "Youtube Music details goes here",
+            details: `From Google Play Music’s ashes rose YouTube Music, a service with a fantastic blend of customized playlists, search-by-lyrics functionality, and official studio releases. What’s more, as an extension of YouTube’s massive entertainment branch, there is an eclectic selection of unique music, including community uploads and video game soundtracks.
+            YouTube is a tremendously popular platform, so hopping on to YouTube Music for your listening entertainment is no real stretch. Likewise, former Google Play Music fans should find plenty of similarities (and a lot to love) between YouTube Music and the now-defunct service.
+            Pros:
+            • Lets you easily switch between audio and music videos
+            • Many music discovery tools
+            • Cool location- and time-based playlists
+            • Can search for songs by lyrics
+            • Collaborative playlists
+            • Family and student plans
+            • Podcast support
+
+            Cons:
+            • Lacks hi-res audio
+            • Real-time lyrics not available for every song
+            `,
             link: "https://music.youtube.com/music_premium"
         },
         "Deezer": {
             price: 9.99,
-            details: "Netflix details goes here",
+            details: `The music streaming industry is a particularly competitive field, so Deezer, which entered the scene in 2016, has stiff competition. Still, Deezer is a well-rounded package that offers music, live radio, and podcasts, as well as a few interesting perks to make the service worth your while.
+            People who buy music. One of Deezer's most interesting features is its ability to import MP3 files. You can’t do it on mobile devices, but if you have your favorite music files saved on a computer, you can upload them to your account via Deezer's website. Then you can stream those MP3 files from anywhere.
+            Pros:
+            • Useful, free tier on mobile
+            • Good crop of original content, including video
+            • Live radio
+            • Lyrics
+            • Podcasts
+            • Lets you upload MP3 files on the desktop
+
+            Cons:
+            • Free tier on PC is limited to 30-second snippets
+            • Mobile apps lack MP3-upload compatibility
+            • Can't rewind live radio streams
+            • Lacks Hi-Res Audio
+            `,
             link: "https://www.deezer.com/us/offers"
         },
-        "SoundCloud Go+": {
-            price: 8.99,
-            details: "Netflix details goes here",
+        "SoundCloud Go": {
+            price: 4.99,
+            details: `Like other entries on this list, SoundCloud is arguably long past its heyday. It's hard to think of SoundCloud without thinking of the stranglehold it once had on the independent artist landscape back in the early to mid-2010s.
+
+            While it's likely that SoundCloud will never return to its level of relevance when compared to other larger streaming sites, it still remains one of the overall best music streaming services for music enthusiasts.
+            
+            What sets SoundCloud apart from other sites is its emphasis on community. Independent artists are encouraged to platform themselves on the site, and the social features make it easy for artists and fans to interact with one another.`,
             link: "https://checkout.soundcloud.com/go"
         },
         "LiveOne": {
             price: 2.99,
-            details: "LiveOne Details goes here",
+            details: `The late, great Slacker Radio was absorbed by LiveOne, a steaming music service that combines the former’s curated radio listening with the latter’s shows and live performances. As a result, LiveOne features a deep well of quality listening material, which includes informative DJs, numerous podcasts, comedy stations, and concert streams.
+            Hardcore music fans will dig LiveOne. Unlike its many streaming music rivals, LiveOne focuses on the live music experience. So, if your favorite band is coming to town, you can purchase tickets to see a show in person or enjoy the show via live stream.
+            
+            Pros:
+            • Excellently curated channels and playlists
+            • Lets you purchase tickets for in-person or streamed concerts
+            • A deep video well
+            • Informative DJs
+            • Optional news updates
+            • Many podcasts
+
+            Cons:
+            • Cumbersome interface
+            • Lacks Hi-Res Audio
+            • No family plan
+            • Lacks lyrics
+            `,
             link: "https://www.liveone.com/upgrade"
         },
         "SiriusXM Internet Radio": {
             price: 13.99,
-            details: "SiriusXM Internet Radio Details goes here",
+            details: `By combining live radio, in-studio artist sessions, traditional streaming audio, and the ability to rewind streams, SiriusXM whipped up a recipe for success that few rivals can replicate. An extremely generous three-month trial lets you explore the service's offerings before shelling out cash.
+            SiriusXM is the perfect service for radio lovers who want to peruse sports, lifestyles, politics, and news shows between musical bangers. There's a comforting nostalgia that comes from surfing channels on the radio, and SiriusXM brings that old-school charm to your vehicle or mobile device.
+            
+            Pros:
+            • Massive content encompassing live and curated channels
+            • Large buffer lets you pause and rewind content
+            • High-profile exclusive broadcasts
+            • Video shows
+            • Generous three-month free trial
+            • Useful TuneStart and alert systems
+
+            Cons:
+            • Lacks a free tier
+            • Content is segregated depending on hardware
+            • No true family plan
+            • Lacks hi-res audio
+            `,
             link: "https://www.siriusxm.com/plans"
         },
         "Amazon Music Unlimited": {
             price: 9.99,
-            details: "Amazon Music Unlimited Details goes here",
+            details: `Amazon is an online giant in both the e-commerce and digital streaming fields. It's no surprise then that Amazon Music Unlimited offers a feature-packed listening experience that has earned the company a spot among the best in the field, with its 90-million song catalog, Hi-Res Audio, and podcast library.
+            People who are part of the Amazon ecosystem. You can stream crisp audio via a smartphone app, web browser, or numerous Amazon devices, including the Echo and Fire TV.
+            
+            Pros:
+            • Large music and video library
+            • Cool, scrolling lyrics
+            • Tight integration with Amazon device family
+            • Supports hi-res audio
+            • Podcasts
+            • Free tier
+            • Lengthy 90-day free trial
+
+            Cons:
+            • Lacks live radio
+            • Trifling discount for Prime subscribers
+            `,
             link: "https://www.amazon.com/music/unlimited"
         }
     },
@@ -140,37 +315,136 @@ const dataAll = {
         // https://www.verywellfit.com/best-gym-memberships-4780237
         "24 Hour Fitness": {
             price: 20,
-            details: "24 hour fitness details goes here DEPENDS on Location!",
+            details: `Price: $20–$50/ month
+            Basic Amenities: Free weights, weight machines, cardio equipment, floor equipment, locker rooms, towels, studio rooms, and saunas
+            Notable Feature: Open 24 hours
+            Open spaces, lots of equipment, excellent group fitness classes, and extra perks like basketball courts, pools, saunas, and spas make 24-Hour Fitness our pick for amenities.
+
+            Pros:
+            • Always open for business
+            • Large facility with lots of space
+            • Monthly membership is middle-range for price
+            • Extensive features and services
+
+            Cons:
+            • Gym size and type may vary based on location
+            • Not a good fit if you’re looking for a basic gym membership
+            • Gym is often busy at peak hours
+            `,
             link: "https://www.24hourfitness.com/membership/membership-options/"
         },
         "LA Fitness": {
             price: 19.99,
-            details: "LA Fitness extensive selection of machines and free weights and its focus on strength training and overall fitness DEPENDS on Location!",
+            details: `Price: Starts at $19.99/ month (varies by state)
+            Basic Amenities: Vast selection of weight machines, ample group fitness offerings, and personal training, and most locations have an entire floor dedicated to cardio equipment only
+            Notable Feature: Focus on muscle-building workouts
+            We chose LA Fitness because of its extensive selection of machines and free weights and its focus on strength training and overall fitness.
+            Pros:
+            • Large selection of free weights and resistance training machines
+            • Workout areas are spacious and allow for Olympic style lifting
+            • Affordable membership options and 600+ locations in U.S. and Canada
+            • Group fitness classes include cycling and aqua options
+
+            Cons:
+            • Expensive enrollment fee
+            • Not all facilities offer the same classes, equipment, or workout spaces
+            • Some locations do not have a pool or spa
+            `,
             link: "https://www.lafitness.com/Pages/MembershipSignUpSearch.aspx"
         },
         "Gold's Gym": {
             price: 35,
-            details: "Netflix details goes here",
+            details: `Price: $35-$60/ month (varies by location)
+            Basic Amenities: Squat racks, plates and barbells, heavy dumbbells, a variety of weight machines, lockers, showers, saunas, steam rooms, lap pools, personal training, and group fitness classes
+            Notable Feature: Known for its focus on heavy lifting and muscle building
+            If you want an old-school bodybuilding environment with updated equipment, you can’t go wrong with Gold’s Gym.
+
+            Pros:
+            • Focus on heavy lifting with an intense atmosphere
+            • Squat racks, free weights, powerlifting, cardio, resistance machines, group fitness, personal training
+            • Larger facilities have steam rooms, lap pools, basketball courts, racquetball, and running tracks
+            
+            Cons:
+            • Locations concentrated in California
+            • Bodybuilding atmosphere might be intimidating for beginners
+
+            `,
             link: "https://www.goldsgym.com/join-golds-gym-now/"
         },
         "Planet Fitness": {
             price: 10,
-            details: "Planet Fitness details goes here",
+            details: `Price: $10–$24.99/ month
+            Basic Amenities: Cardio machines, basic weight machines, floor space, dumbbells, and barbells
+            Notable Feature: "Judgement Free Zone"
+            When it comes to affordable gym memberships, Planet Fitness is a clear winner. With monthly fees as low as roughly $10, you have no reason to skip your next workout.
+
+            Pros:
+            • Most affordable membership options
+            • Black Card membership comes with free guest pass
+            • “Judgement Free Zone” policy
+
+            Cons:
+            • Basic facilities with minimal amenities
+            • Some locations don’t have squat racks and other Olympic equipment
+            `,
             link: "https://www.planetfitness.com/gym-memberships"
         },
         "Anytime Fitness": {
             price: 41,
-            details: "Netflix details goes here",
+            details: `Price: About $41/ month
+            Basic Amenities: Barbells and racks, dumbbells, kettlebells, boxes, cardio equipment, weight machines, and yoga mats
+            Notable Feature: Your own key fob to enter the gym without an employee needed
+            With access to over 4,700 locations—even some international—you'll be almost sure to find a location near you when you travel.
+
+            Pros:
+            • Always open for business 24/7
+            • Over 4,700 franchise locations worldwide
+            • Additional savings if you sign a 6-, 12-, or 18-month contract
+
+            Cons:
+            • Not staffed all hours of the day
+            • Lacks amenities like a sauna, steam room, and pool
+            • Minimal strength and cardio equipment
+            `,
             link: "https://www.anytimefitness.com/membership/"
         },
         "Equinox": {
             price: 200,
-            details: "Equinox earned the top spot for luxury and because of its lavish environment, expert instructors, top-of-the-line equipment, and endless amenities.",
+            details: `Price: About $200+/ month (varies by location)
+            Basic Amenities: Cold eucalyptus towels, a full-service spa, a lifestyle shop, unlimited group classes, steam rooms, saunas, and more
+            Notable Feature: High-end amenities
+            Equinox earned the top spot for luxury and because of its lavish environment, expert instructors, top-of-the-line equipment, and endless amenities.
+
+            Pros:
+            • Spacious workout areas, expert-led classes, and other high-quality equipment
+            • Full-service spa, steam room, sauna, locker rooms, pool, and other high-end amenities
+            • Recruit well-known certified personal trainers and fitness instructors
+
+            Cons:
+            • Significantly more expensive than other gyms and fitness facilities
+            • Membership fees vary and depend on location and club type
+            • Not a good fit if you’re looking for a basic gym membership
+            `,
             link: "https://www.equinox.com/clubs?icmp=home-clubs"
         },
         "Crunch Fitness": {
             price: 14.99,
-            details: "budget-friendly package with plenty of group classes. Bump up to a Signature location, and you’ll have access to some of the top fitness classes around.",
+            details: `Price: Varies widely by location and whether or not you go to a "Signature Club"
+            Basic Amenities: Classes for yoga, HIIT, muscle-sculpting, TRX training, and pilates, in addition to cardio equipment, free weights, and weight machines
+            Notable Feature: Extensive class options
+            The basic Crunch Fitness memberships offer a budget-friendly package with plenty of group classes. Bump up to a Signature location, and you’ll have access to some of the top fitness classes around.
+            Pros:
+            • Different membership options
+            • Budget-friendly basic membership
+            • Fun and effective classes like cycling, yoga, action sports, cardio, dance, and strength training
+            • Save monthly by signing a contract
+
+            Cons:
+            • Lacks amenities like a sauna, steam room, and pool
+            • Membership fees vary based on location and ownership
+            • Signature locations are significantly more expensive than other Crunch facilities
+            • Requires an enrollment and annual fee
+            `,
             link: "https://www.crunch.com/locations"
         }
     },

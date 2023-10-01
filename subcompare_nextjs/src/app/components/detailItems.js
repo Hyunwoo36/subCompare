@@ -14,6 +14,7 @@ function InfoModal({ onClose, service, currentCategory }) {
 
     return (
         <div className={styles.modalContainer}>
+            <span className={styles.closeModal} onClick={onClose}>X</span>
             <h1>{service} Details</h1>
             <p>{details.split('\n').map((str, index, array) =>
                 <React.Fragment key={index}>
@@ -24,7 +25,7 @@ function InfoModal({ onClose, service, currentCategory }) {
             </p>
 
             {link && <a href={link} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>Link to official site</a>}
-            <span className={styles.closeModal} onClick={onClose}>X</span>
+
         </div>
     )
 }
