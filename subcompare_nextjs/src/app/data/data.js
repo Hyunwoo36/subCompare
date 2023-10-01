@@ -1,18 +1,37 @@
 const dataAll = {
     "OTT / Streaming": {
+        // https://www.dacast.com/blog/5-business-ott-platforms-for-over-the-top-video-content/
         "Netflix": {
             price: 6.99,
-            details: "Netflix details goes here",
+            details: `Netflix is one of the original OTT streaming servicesIt started as an online DVD rental shop. Its quick adaptation as live streaming technology began to surface is part of its success.
+
+            Today, Netflix is one of the largest on-demand streaming platforms on the internet, featuring over 15,000 titles. Netflix features titles from other production companies and original content that is only available on its platform.
+            
+            Another attribute that makes the OTT video platform popular among people who enjoy “binge-watching” is that it uploads entire seasons of television shows at a time.
+            
+            Netflix offers three different monthly pricing plans that include unlimited, ad-free streaming. Plans range from US$6.99 to US$19.99 a month.`,
             link: "https://www.netflix.com/signup",
         },
         "Hulu": {
             price: 7.99,
-            details: "Netflix details goes here",
+            details: `Hulu is another popular OTT video service. Hulu is a bit different from Netflix, as new episodes are typically uploaded the day after they air.
+
+            Hulu offers four pricing plans, including:
+            
+            Hulu: 7.99/month
+            Hulu (No-Ads): $14.99/month
+            Hulu + Live TV: $69.99/month
+            Hulu (No-Ads) + Live TV: $75.99/month
+            In addition to these plans, Hulu offers add-ons and bundled packages that give viewers access to other collections of content, as well.`,
             link: "https://help.hulu.com/s/article/how-much-does-hulu-cost"
         },
         "Disney+": {
             price: 7.99,
-            details: "Netflix details goes here",
+            details: `Disney+ is an OTT streaming service that offers access to films and TV series that The Walt Disney Company owns. These include programs by Disney, Pixar, Marvel, Star, National Geographic, and Star Wars.
+
+            Disney+ costs $7.99/month or $79.99/year for unlimited, ad-free streaming access.
+            
+            Disney+ can be bundled with other streaming services, including Hulu.`,
             link: "https://help.disneyplus.com/article/disneyplus-price?redirect=false"
         },
         "Paramount+": {
@@ -22,12 +41,21 @@ const dataAll = {
         },
         "Max": {
             price: 9.99,
-            details: "Netflix details goes here",
+            details: `HBO Max is an OTT video streaming service that mainly offers content from HBO’s parent company, WarnerMedia.
+
+            An exciting aspect of HBO Max’s OTT service is that it offers access to movies that are still in theaters at no additional cost.
+            
+            HBO Max comes in two pricing tiers:
+            
+            Streaming with ads costs $9.99/month
+            Ad-free streaming is $14.99/month`,
             link: "https://help.max.com/US/Answer/Detail/000002547"
         },
         "Peacock": {
             price: 5.99,
-            details: "Netflix details goes here",
+            details: `Peacock a rising star among newer OTT streaming services, is owned by NBCUniversal, which is a subsidiary of Comcast. Peacock features many different types of movies and television series, including titles owned by NBC and some Peacock originals.
+
+            Users can start streaming on Peacock for a free trial. Upgrading to Peacock Premium for $4.99/month or $49.99/ year opens access to a larger content library. $7.99/month gives access to the same content library with ad-free streaming.`,
             link: "https://www.peacocktv.com/plans/all-monthly"
         },
         "Discovery+": {
@@ -42,12 +70,21 @@ const dataAll = {
         },
         "ESPN+": {
             price: 9.99,
-            details: "Netflix details goes here",
+            details: `ESPN+ is an OTT streaming service dedicated to sports streaming. This service is a little bit different from the others we’ve covered because it focuses on live video OTT streaming.
+
+            ESPN+ offers the following plans:
+            
+            $10/month
+            $100/year`,
             link: "https://plus.espn.com"
         },
         "Amazon Prime Video": {
             price: 8.99,
-            details: "Amazon Prime Video details goes here",
+            details: `Amazon’s own service, Prime Video, offers unlimited access to a library of video content with a subscription, and it also has additional content available for rent or purchase.
+
+            One unique feature of this OTT video platform is that users can purchase access to films that are still in theaters. Prime Video also has access to live programming, like sporting events.
+            
+            Prime Video is included in the Amazon Prime membership.`,
             link: "https://www.amazon.com/gp/help/customer/display.html?nodeId=G34EUPKVMYFW8N2U"
         }
     },

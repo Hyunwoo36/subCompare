@@ -53,10 +53,17 @@ export default function ServiceCategoryItems() {
             </div>
 
             <div className={`${styles.flexAlignItemsCenter} ${styles.fontLarger}
-            ${currentCategory === "Meal Kit / Food Delivery" ? styles.bold : ""}`}
-                onClick={() => setCurrentCategory("Meal Kit / Food Delivery")}>
+            ${currentCategory === "Meal Delivery / Kit" ? styles.bold : ""}`}
+                onClick={() => setCurrentCategory("Meal Delivery / Kit")}>
                 <TriangleIcon className={styles.marginRight} />
-                Meal Kit and Food Delivery
+                Meal Delivery / Kit
+            </div>
+
+            <div className={`${styles.flexAlignItemsCenter} ${styles.fontLarger}
+            ${currentCategory === "Food Delivery" ? styles.bold : ""}`}
+                onClick={() => setCurrentCategory("Food Delivery")}>
+                <TriangleIcon className={styles.marginRight} />
+                Food Delivery
             </div>
 
             <div className={`${styles.flexAlignItemsCenter} ${styles.fontLarger}

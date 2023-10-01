@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import CategoryContext from "./categoryContext.js";
 import styles from '../home.module.css';
 import dataAll from "../data/data.js";
+import React from 'react';
 
 function InfoModal({ onClose, service, currentCategory }) {
     const details = (dataAll[currentCategory] && dataAll[currentCategory][service]
@@ -14,7 +15,14 @@ function InfoModal({ onClose, service, currentCategory }) {
     return (
         <div className={styles.modalContainer}>
             <h1>{service} Details</h1>
-            <p>{details}</p>
+            <p>{details.split('\n').map((str, index, array) =>
+                <React.Fragment key={index}>
+                    {str}
+                    {index === array.length - 1 ? null : <br />}
+                </React.Fragment>
+            )}
+            </p>
+
             {link && <a href={link} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>Link to official site</a>}
             <span className={styles.closeModal} onClick={onClose}>X</span>
         </div>
