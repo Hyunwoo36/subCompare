@@ -27,9 +27,11 @@
 .eachCategoryContainer {
     display: flex;
     justify-content:first baseline;
+    flex: 1;
     align-items: center;
     flex-direction: column;
-    margin: 2rem 2rem;
+    max-width: 23%;
+    margin: 1rem;
 }
 
 .eachTitleText {
@@ -69,6 +71,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .flexCol {
@@ -77,7 +80,10 @@
     justify-content: center;
     /* align-items: center; */
 }
-
+.triangleIconSize {
+    width: 24px;
+    height: 24px;
+}
 .serviceCategoryPadding > div {
     padding-bottom: 2rem;
     cursor: pointer;
@@ -164,4 +170,58 @@
 
 .cursor {
     cursor: pointer;
+}
+
+/* media querys */
+
+@media (max-width: 780px) {
+    .TriangleIcon {
+        width: 15px;
+        height: 15px;
+    }
+    .mainContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .subTitle .title  .eachTitleText .eachCategoryContainer{
+        font-size: medium;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+
+    }
+    .eachCategoryContainer {
+        max-width: 25%;
+        margin: 0;
+    }
+    .eachTitleText {
+        font-size: medium;
+        margin-bottom: 1rem;
+    }
+    .fontLarger {
+        font-size: smaller;
+    }
+    .modalContainer {
+        width: 90%;
+    }
+    .triangleIconSize {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title .subTitle .eachTitleText{
+        margin: 10px 0;
+    }
+    .eachTitleText {
+        font-size: medium;
+    }
+    .subTitle {
+        font-size: small;
+    }
+    .title {
+        font-size: medium;
+    }
 }
